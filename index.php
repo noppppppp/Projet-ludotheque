@@ -26,7 +26,7 @@ foreach ($jeux as $j) {
 // Calcul du pourcentage (si tu as au moins 1 jeu)
 $pourcentageComplet = ($totalJeux > 0) ? round(($nbComplets / $totalJeux) * 100) : 0;
 ?>
-
+// HTML 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
