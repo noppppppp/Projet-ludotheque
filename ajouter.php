@@ -1,7 +1,7 @@
 <?php 
 require_once 'includes/db.php'; 
 $message = "";
-
+// On recupere les données
 if (isset($_POST['valider'])) {
     $titre      = $_POST['titre'];
     $annee      = $_POST['annee'];
