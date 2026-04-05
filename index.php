@@ -1,7 +1,6 @@
 <?php
 require_once 'includes/db.php';
 
-// 1. On prépare la requête pour TOUT récupérer
 // On fait une "JOINTURE" pour avoir le nom de la console au lieu de juste son ID
 $sql = "SELECT jeux.*, consoles.nom AS console_nom 
         FROM jeux 
