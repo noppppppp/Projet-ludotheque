@@ -25,8 +25,8 @@ Un projet simple pour gérer et suivre une collection de jeux vidéo avec PHP et
 -  **Mode Sombre / Jour** : Pour un meilleur confort visuel.
 -  **Design Responsive** : Pour gérer l'affichage sur mobile.
 
-### 🔒 Sécurité
+###  Sécurité
 -  **Accès restreint** : Mise en place d'un système d'authentification pour sécuriser l'ajout et la suppression de jeux.
 
-### 💎 Fonctionnalités Avancées
+###  Fonctionnalités Avancées
 - **Prix en temps réel** : Récupération automatique de la valeur estimée des jeux en temps réel via API pour garder la collection à jour.
