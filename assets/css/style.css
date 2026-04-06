@@ -1,4 +1,3 @@
-/* Configuration générale */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f2f5;
@@ -62,7 +61,7 @@ th, td {
     border-bottom: 1px solid #eee;
 }
 
-/* Style des images (Jaquettes) */
+/* Style des images */
 .img-jeu {
     width: 60px;
     height: 80px;
@@ -72,11 +71,10 @@ th, td {
 }
 
 .img-jeu:hover {
-    transform: scale(1.5); /* L'image s'agrandit quand on passe dessus */
+    transform: scale(1.5); 
     cursor: pointer;
 }
 
-/* Les Badges d'état (Complet / Loose) */
 .badge {
     padding: 5px 10px;
     border-radius: 20px;
@@ -113,7 +111,7 @@ th, td {
     background-color: #527292;
 }
 
-/* Style spécifique au formulaire */
+/* Style du formulaire */
 .form-container {
     background: white;
     padding: 30px;
@@ -141,7 +139,7 @@ th, td {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    box-sizing: border-box; /* Évite que l'input dépasse */
+    box-sizing: border-box; 
 }
 
 .form-row {

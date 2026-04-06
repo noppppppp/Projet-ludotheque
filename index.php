@@ -6,8 +6,8 @@ $sql = "SELECT jeux.*, consoles.nom AS console_nom
         FROM jeux 
         JOIN consoles ON jeux.console_id = consoles.id";
 
-$stmt = $pdo->query($sql); // Ici on utilise query() car il n'y a pas de variables à sécuriser
-$jeux = $stmt->fetchAll(PDO::FETCH_ASSOC); // On transforme le résultat en un tableau PHP
+$stmt = $pdo->query($sql); 
+$jeux = $stmt->fetchAll(PDO::FETCH_ASSOC); 
 
 // Calcul du nombre de jeux
 $totalJeux = count($jeux);
@@ -23,7 +23,6 @@ foreach ($jeux as $j) {
     }
 }
 
-// Calcul du pourcentage (si tu as au moins 1 jeu)
 $pourcentageComplet = ($totalJeux > 0) ? round(($nbComplets / $totalJeux) * 100) : 0;
 ?>
 // HTML 
