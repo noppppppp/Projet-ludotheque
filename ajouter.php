@@ -1,7 +1,10 @@
 <?php 
 require_once 'includes/db.php'; 
 $message = "";
-// On recupere les données
+
+$stmt = $pdo->query("SELECT * FROM consoles ORDER BY nom ASC");
+$toutes_les_consoles = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 if (isset($_POST['valider'])) {
     $titre      = $_POST['titre'];
     $annee      = $_POST['annee'];
@@ -66,11 +69,16 @@ if (isset($_POST['valider'])) {
                 </div>
 
                 <div class="form-group">
-                    <label>Console</label>
-                    <select name="console_id" required>
-                        <option value="1">PlayStation 1</option>
-                        <option value="2">PlayStation 2</option>
-                        <option value="3">PlayStation 3</option>
+                    <label for="console_id">Console :</label>
+                    <select name="console_id" id="console_id" required>
+                        <option value="">-- Choisir une console --</option>
+
+                             <?php foreach ($toutes_les_consoles as $c): ?>
+                              <option value="<?= $c['id'] ?>">
+                             <?= htmlspecialchars($c['nom']) ?>
+                              </option>
+                             <?php endforeach; ?>
+    
                     </select>
                 </div>
 
