@@ -25,7 +25,7 @@ foreach ($jeux as $j) {
 
 $pourcentageComplet = ($totalJeux > 0) ? round(($nbComplets / $totalJeux) * 100) : 0;
 ?>
-// HTML 
+// HTML
 <!DOCTYPE html>
 <html lang="fr">
 <head>
